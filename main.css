@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    height: 100vh;
+}
+
+.tarolo{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cim{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 500;
+    user-select: none;
+}
+
+.zold{
+    color: lime;
+}
+
+.bejGomb, .regGomb{
+    width: 500px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+#beGomb{
+    color: white;
+}
+
+#reGomb{
+    color: lime;
+}
+
+#reGomb, #beGomb{
+    font-size: 1.5rem;
+    background-color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+.bejGomb:hover, .regGomb:hover{
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 450px) {
+    .bejGomb, .regGomb{
+        width: 350px;
+    }
+}
