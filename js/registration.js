@@ -39,6 +39,8 @@ async function register() {
             alert(errorMessages)
         } else if(data.error){
             alert(data.error);
+        } else{
+            alert('Ismeretlen hiba!')
         }
 
 
